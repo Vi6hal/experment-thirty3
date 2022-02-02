@@ -38,6 +38,11 @@ jobs:
 
       - name: Checking Formatting & Linting Compliance
         uses: pre-commit/action@v2.0.3
+      # Initializes the CodeQL tools for scanning.
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v1
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v1
 
   testcases_and_coverage:
     name: Executing Test Cases & Coverage Report [PR]
