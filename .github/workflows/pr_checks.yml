@@ -40,9 +40,9 @@ jobs:
         uses: pre-commit/action@v2.0.3
       # Initializes the CodeQL tools for scanning.
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v1
+        uses: github/codeql-action/init@v2
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v1
+        uses: github/codeql-action/analyze@v2
 
   testcases_and_coverage:
     name: Executing Test Cases & Coverage Report [PR]
